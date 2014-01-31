@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/loadCounter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loadCounter"
+        android:text="@string/loadCounter" >
+    </Button>
+
+    <Button
+        android:id="@+id/resetCounter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/removeCounter"
+        android:layout_below="@+id/removeCounter"
+        android:layout_marginTop="16dp"
+        android:onClick="resetCounter"
+        android:text="@string/resetCounter" />
+
+    <Button
+        android:id="@+id/sortCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/loadCounter"
+        android:layout_alignRight="@+id/loadCounter"
+        android:layout_below="@+id/loadCounter"
+        android:layout_marginTop="17dp"
+        android:onClick="sortCounter"
+        android:text="@string/sortCounter" />
+
+    <Button
+        android:id="@+id/removeCounter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sortCounter"
+        android:layout_below="@+id/sortCounter"
+        android:layout_marginTop="16dp"
+        android:onClick="removeCounter"
+        android:text="@string/removeCounter" />
+
+    <EditText
+        android:id="@+id/counterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/resetCounter"
+        android:layout_below="@+id/resetCounter"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/name" />
+
+    <Button
+        android:id="@+id/sendButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/counterName"
+        android:layout_alignBottom="@+id/counterName"
+        android:layout_toRightOf="@+id/counterName"
+        android:onClick="sendButton"
+        android:text="@string/sendMessage" />
+
+    <EditText
+        android:id="@+id/renameCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/counterName"
+        android:layout_below="@+id/sendButton"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+ 		android:hint="@string/renameCounter" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/rename"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/renameCounter"
+        android:layout_alignLeft="@+id/sendButton"
+        android:onClick="renameCounter"
+        android:text="@string/rename" />
+
+</RelativeLayout>

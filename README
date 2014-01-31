@@ -1,0 +1,21 @@
+Tarek El Bohtimy
+CMPUT 301 Assignment
+
+This an android application that creates counters and increments the counters for you for your easy counting needs.  This application has more than that while you can load and create new counters you can also remove unwanted counters, sort the counters by number of counts, reset the counters values, and rename the counters.  Each counter has its own statistics keeping the number of counts done during the day, the week, the hour and the month.
+LOAD COUNTER-Lets you see a list of the counters that you have saved in the application
+SORT COUNTER-Press this to sort the counters from greatest to least (descending order).
+REMOVE COUNTERS- Takes you to the counter list page and any counter you tap on will be completely removed from the application.
+RESET COUNTERS- Takes you to the counter list page and any counter you tap on will be completely reset.
+NEW COUNTER- Enter the name of a counter and press the create button and you will create a new counter.
+RENAME COUNTER- Enter a name and then you will be taken to the counter name list and any counter you tap will get the name that you entered on the previous page.
+Stats of “X”-Will take you to a stats page that shows how many times the counter has been pressed during the hour, day, week, and month.
+
+
+Resources I used other than the given texts:
+http://stackoverflow.com/questions/15741520/adding-a-button-for-android-in-java-code
+
+http://www.youtube.com/watch?v=jmcvGAAimn4
+
+http://www.youtube.com/watch?v=L1tpb8MOY74
+
+
